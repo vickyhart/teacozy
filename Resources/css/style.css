@@ -98,34 +98,50 @@
   padding-right: 150px;
 }
 
-.locationtitle{
-    display: flex;
-    width: 100%;
+.locations-container{
+    background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+    /*  to get the handle on the coffee cup to show,
+        I had to change the height to 575px (tried a lot of other options that did  not work)
+      height:575px;
+      width:1200px;*/
+
+    height:575px;
+    width:1200px;
+    margin-left: 65px;
+}
+
+.locations-container h1{
+  padding-top: 50px;
+  color:white;
+  background: rgba(76, 175, 80, 0.0);
+
 }
 
 .locations{
-  display: flex;
-  margin-top: 50px;
-  display: flex;
-  margin-left: 65px;
-  justify-content: center;
-  align-items: center;
-  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
+  display: inline-flex;
 
-/*  to get the handle on the coffee cup to show,
-    I had to change the height to 575px (tried a lot of other options that did  not work)*/
-  height:575px;
-  width:1200px;
-  flex-direction: row;
+/*  margin-left: 65px;
+  justify-content: center;
+  align-items: center;*/
+/*align-content: space-between;*/
+background: rgba(76, 175, 80, 0.0);
+
+
+
 }
 
 .locationeach{
+
   display: flex;
   flex-direction: column;
   opacity: 1;
-  height: auto;
+  height: 300px;
   width: 300px;
   margin-right: 40px;
+  margin-left: 40px;
+
+
+
 }
 
 .footer h4{
