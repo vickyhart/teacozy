@@ -21,22 +21,32 @@
   height: 69px;
   position: fixed;
   z-index: 1;
+  top:0;
 }
 
 .header img{
+  padding-top: 10px;
   text-align: left;
 }
 
 .header nav {
   width: 100%;
   text-align:right;
-  align-items: center;
+  padding-top: 15px;
   padding-right: 25px;
-  justify-content:space-around;
+  font-size: 22px;
+}
+
+.header a{
+  text-decoration: underline;
+  justify-content: space-around;
+  margin-right: 15px;
 }
 
 .mission {
   display: flex;
+  position: relative;
+  margin-top: 69px;
   justify-content: center;
   background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
   margin-left: 65px;
@@ -50,12 +60,8 @@
   }
 
 .teas{
-  display: inline-flex;
-  width: 1000px;
-  height:auto;
-  border-color: red;
-  border-style: solid;
-  border-width: 2px;
+  padding-top: 60px;
+  width: 100%;
   align-items: center;
 }
 
@@ -82,18 +88,19 @@
   width:1000px;
   justify-content: space-around;
 }
+
 .row2col1{
   justify-content: space-around;
   padding-left: 150px;
 }
+
 .row2col2{
   padding-right: 150px;
 }
 
 .locationtitle{
-display: flex;
-flex-flow: column;
-
+    display: flex;
+    width: 100%;
 }
 
 .locations{
@@ -104,7 +111,10 @@ flex-flow: column;
   justify-content: center;
   align-items: center;
   background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg);
-  height:500px;
+
+/*  to get the handle on the coffee cup to show,
+    I had to change the height to 575px (tried a lot of other options that did  not work)*/
+  height:575px;
   width:1200px;
   flex-direction: row;
 }
@@ -120,4 +130,5 @@ flex-flow: column;
 
 .footer h4{
     text-align:left;
+    margin-left: 20px;
   }
